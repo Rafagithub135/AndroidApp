@@ -6,4 +6,5 @@ fun main() {
     println("Enter the quantity of the item:  ")
     val quantity = readLine()!!.toInt()
     println("The total cost is:  " + (price * quantity))
+
 }
