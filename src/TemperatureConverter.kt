@@ -5,7 +5,9 @@ fun main() {
     println("Please type 1 to convert Celsius to Fahrenheit, 2 to convert Fahrenheit to Celsius, or 3 to exit:  ")
     val choice = readln().toInt()
     while (choice > 0) {
-        if (choice == 1) {
+        if (choice == 3) {
+            println("Thank you for using the Temperature Converter Program.  Goodbye $name!")
+        } else if (choice == 1) {
             println("Please enter the temperature in Celsius:  ")
             val celsius = readln().toDouble()
             val fahrenheit = (celsius * 9 / 5) + 32
@@ -15,8 +17,6 @@ fun main() {
             val fahrenheit = readln().toDouble()
             val celsius = (fahrenheit - 32) * 5 / 9
             println("$fahrenheit degrees Fahrenheit is $celsius degrees Celsius.")
-        } else if (choice == 3) {
-            println("Thank you for using the Temperature Converter Program.  Goodbye $name!")
         } else {
             println("You have entered an invalid choice.  Please try again.")
         }
